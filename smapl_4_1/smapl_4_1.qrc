@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Assets">
+        <file>jinzhi.png</file>
+        <file>bitbug_favicon.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>smapl_4_1Class</class>
+ <widget class="QWidget" name="smapl_4_1Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>303</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>smapl_4_1</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="smapl_4_1.qrc">
+    <normaloff>:/Assets/jinzhi.png</normaloff>:/Assets/jinzhi.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>十  进 制：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="editDec">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="btnDec">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>转换为其它进制</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>二  进 制：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="editBin">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btnBin">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>转换为其它进制</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>八  进 制：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="editOct">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="btnOct">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>转换为其它进制</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>十六进制：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="editHex">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="btnHex">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>转换为其它进制</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="smapl_4_1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnDec</sender>
+   <signal>clicked()</signal>
+   <receiver>smapl_4_1Class</receiver>
+   <slot>on_btnDec_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnBin</sender>
+   <signal>clicked()</signal>
+   <receiver>smapl_4_1Class</receiver>
+   <slot>on_btnBin_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>323</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnHex</sender>
+   <signal>clicked()</signal>
+   <receiver>smapl_4_1Class</receiver>
+   <slot>on_btnHex_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnOct</sender>
+   <signal>clicked()</signal>
+   <receiver>smapl_4_1Class</receiver>
+   <slot>on_btnOct_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>384</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_pushButton_clicked()</slot>
+  <slot>on_btnBin_clicked()</slot>
+  <slot>on_btnHex_clicked()</slot>
+  <slot>on_btnDec_clicked()</slot>
+  <slot>on_btnOct_clicked()</slot>
+ </slots>
+</ui>
