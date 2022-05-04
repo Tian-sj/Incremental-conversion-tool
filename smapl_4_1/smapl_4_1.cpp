@@ -6,7 +6,7 @@ smapl_4_1::smapl_4_1(QWidget* parent)
 {
 	ui.setupUi(this);
 
-	validator_bin = new QRegularExpressionValidator(QRegularExpression(R"([0-1]*)"), this);
+	validator_bin = new QRegularExpressionValidator(QRegularExpression(R"(-?[0-1]*)"), this);
 	ui.editBin->setValidator(validator_bin);
 
 	validator_oct = new QRegularExpressionValidator(QRegularExpression(R"(-?[0-7]*)"), this);
