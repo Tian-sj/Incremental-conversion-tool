@@ -1,10 +1,12 @@
-#include "smapl_4_1.h"
-#include <QtWidgets/QApplication>
+#include "InConTool.h"
+
+#include <QApplication>
+#pragma comment(lib, "user32.lib")
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    smapl_4_1 w;
+    InConTool w;
     w.show();
     return a.exec();
 }
