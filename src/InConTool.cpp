@@ -28,41 +28,41 @@ InConTool::~InConTool()
     delete validator_hex;
 }
 
-void InConTool::on_btnBin_clicked()
+void InConTool::on_editDec_textChanged(const QString &arg1)
 {
-    QString str = ui->editBin->text();
-    bool ok;
-    int value = str.toInt(&ok, 2);
-    ui->editDec->setText(QString::number(value, 10));
-    ui->editOct->setText(QString::number(value, 8));
-    ui->editHex->setText(QString::number(value, 16).toUpper());
-}
-
-void InConTool::on_btnDec_clicked()
-{
-    QString str = ui->editDec->text();
-    int value = str.toInt();
+    int value = arg1.toInt();
     ui->editBin->setText(QString::number(value, 2));
     ui->editOct->setText(QString::number(value, 8));
     ui->editHex->setText(QString::number(value, 16).toUpper());
 }
 
-void InConTool::on_btnOct_clicked()
+
+void InConTool::on_editBin_textChanged(const QString &arg1)
 {
-    QString str = ui->editOct->text();
     bool ok;
-    int value = str.toInt(&ok, 8);
+    int value = arg1.toInt(&ok, 2);
+    ui->editDec->setText(QString::number(value, 10));
+    ui->editOct->setText(QString::number(value, 8));
+    ui->editHex->setText(QString::number(value, 16).toUpper());
+}
+
+
+void InConTool::on_editOct_textChanged(const QString &arg1)
+{
+    bool ok;
+    int value = arg1.toInt(&ok, 8);
     ui->editBin->setText(QString::number(value, 2));
     ui->editDec->setText(QString::number(value, 10));
     ui->editHex->setText(QString::number(value, 16).toUpper());
 }
 
-void InConTool::on_btnHex_clicked()
+
+void InConTool::on_editHex_textChanged(const QString &arg1)
 {
-    QString str = ui->editHex->text();
     bool ok;
-    int value = str.toInt(&ok, 16);
+    int value = arg1.toInt(&ok, 16);
     ui->editBin->setText(QString::number(value, 2));
     ui->editOct->setText(QString::number(value, 8));
     ui->editDec->setText(QString::number(value, 10));
 }
+

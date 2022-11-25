@@ -18,10 +18,13 @@ private:
 
 private slots:
 
-    void on_btnBin_clicked();
-    void on_btnDec_clicked();
-    void on_btnOct_clicked();
-    void on_btnHex_clicked();
+    void on_editDec_textChanged(const QString &arg1);
+
+    void on_editBin_textChanged(const QString &arg1);
+
+    void on_editOct_textChanged(const QString &arg1);
+
+    void on_editHex_textChanged(const QString &arg1);
 
 private:
     Ui_InConTool *ui;
